@@ -5,17 +5,14 @@ import java.util.Objects;
 public class Time {
 private int hour;
 private int minute;
-private boolean am;
 /** constructor for time
  * 
  * @param hour
  * @param minute
- * @param am
  */
-public Time (int hour, int minute, boolean am) {
+public Time (int hour, int minute) {
 	this.hour = hour;
 	this.minute = minute;
-	this.am= am;
 }
 
 public String toString() {
@@ -28,9 +25,9 @@ public String toString() {
 	}
 }
 	public static void main(String[] args) {
-		Time t1 = new Time(3, 20, true);
+		Time t1 = new Time(3, 20);
 		System.out.println(t1);
-		Time t2 = new Time(15, 30, false);
+		Time t2 = new Time(15, 30);
 		System.out.println(t2);
 		System.out.println(t1.equals(t2));
     }

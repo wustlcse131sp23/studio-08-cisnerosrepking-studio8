@@ -43,9 +43,9 @@ public String toString() {
     	list.add(d5); 
     	System.out.println(list);
     	HashSet<Date> set = new HashSet<Date>();
-    	list.add(d1); 
-    	list.add(d1);
-    	list.add(d3); 
+    	set.add(d1); 
+    	set.add(d1);
+    	set.add(d3); 
     	System.out.println(set);
     }
     
